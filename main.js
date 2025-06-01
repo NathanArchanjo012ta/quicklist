@@ -57,3 +57,7 @@ function removeItem(itemName){
   }
   showitemsList()
 }
+
+function addHideWarningClass(){
+  document.querySelector(".warning").classList.add("hide-warning")
+}
