@@ -25,7 +25,9 @@ function addItem() {
 
 function showitemsList() {
   const sectionList = document.querySelector(".list")
-  sectionList.innerHTML = "" // limpa antes de reescrever
+  sectionList.textContent = "" 
+items.sort((itemA, itemB) => Number(itemA.checked) - Number(itemB.checked))
+
 
   items.map((item, index) => {
     sectionList.innerHTML += `
