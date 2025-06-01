@@ -3,7 +3,11 @@ const items = []
 function addItem() {
   const itemName = document.querySelector("#item").value
 
-  if (itemName.trim() === "") return // impede adicionar item vazio
+ if (itemName === "") {
+  alert("Digite um item válido!")
+  return
+}
+
 
   const item = {
     name: itemName,
